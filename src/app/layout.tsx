@@ -4,12 +4,10 @@ import "./globals.css";
 
 const exo = Exo_2({
   variable: "--font-exo-2",
-  subsets: ["latin"],
 });
 
 const sourceSans = Source_Sans_3({
   variable: "--font-source-sans",
-  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {

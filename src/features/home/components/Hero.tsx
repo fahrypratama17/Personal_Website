@@ -1,6 +1,6 @@
-import { Spotlight } from "@/shared/components/spotlight-new";
+import { Spotlight } from "@/shared/components/SpotlightNew";
 import { cn } from "@/lib/utils";
-import { TextGenerateEffect } from "@/shared/components/text-generate-effect";
+import { TextGenerateEffect } from "@/shared/components/TextGenerateEffect";
 
 const Hero = () => {
   return (

@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/cn";
 
 export const BentoGrid = ({
   className,
@@ -9,7 +9,7 @@ export const BentoGrid = ({
 }) => {
   return (
     <div
-      className={cn("grid grid-cols-1 gap-4 md:auto-rows-[18rem]", className)}
+      className={cn("grid grid-cols-1 gap-4 md:auto-rows-[14rem]", className)}
     >
       {children}
     </div>
@@ -32,14 +32,13 @@ export const BentoGridItem = ({
   return (
     <div
       className={cn(
-        "group/bento shadow-input bg-black-100 row-span-1 flex flex-col justify-between space-y-4 rounded-xl border border-neutral-200 p-4 transition duration-200 hover:shadow-xl dark:border-white/20 dark:bg-black dark:shadow-none",
+        "group/bento shadow-input bg-black-100 relative row-span-1 flex flex-col justify-between overflow-hidden rounded-3xl border border-neutral-200 transition duration-200 hover:shadow-lg dark:border-white/20 dark:bg-black dark:shadow-none",
         className,
       )}
     >
       {header}
       <div className="transition duration-200 group-hover/bento:translate-x-2">
-        {icon}
-        <div className="mt-2 mb-2 font-sans font-bold text-white">{title}</div>
+        <div className="font-sans font-bold text-white">{title}</div>
         <div className="font-sans text-xs font-normal text-white">
           {description}
         </div>

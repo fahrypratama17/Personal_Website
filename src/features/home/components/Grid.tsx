@@ -1,10 +1,11 @@
 import { BentoGrid, BentoGridItem } from "@/shared/components/BentoGrid";
-import { Home } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/cn";
+import Image from "next/image";
+import { BackgroundGradientAnimation } from "@/shared/components/BackgroundGradient";
 
 export default function Grid() {
   return (
-    <section className="section">
+    <section id="project" className="section">
       <BentoGrid className="mx-auto mb-4 max-w-7xl md:grid-cols-[1fr_0.7fr]">
         {items.slice(0, 3).map((item, i) => (
           <BentoGridItem
@@ -12,7 +13,6 @@ export default function Grid() {
             title={item.title}
             description={item.description}
             header={item.header}
-            icon={item.icon}
             className={cn(i === 0 ? "md:row-span-2" : "", "font-body")}
           />
         ))}
@@ -24,7 +24,6 @@ export default function Grid() {
             title={item.title}
             description={item.description}
             header={item.header}
-            icon={item.icon}
             className={cn(i === 1 ? "md:row-span-2" : "", "font-body")}
           />
         ))}
@@ -32,45 +31,63 @@ export default function Grid() {
     </section>
   );
 }
-const Skeleton = () => (
-  <div className="flex h-full min-h-24 w-full flex-1 rounded-xl bg-linear-to-br from-neutral-200 to-neutral-100 dark:from-neutral-900 dark:to-neutral-800"></div>
-);
+
 const items = [
   {
-    title: "The Dawn of Innovation",
-    description: "Explore the birth of groundbreaking ideas and inventions.",
-    header: <Skeleton />,
-    icon: <Home className="h-4 w-4 text-neutral-500" />,
+    title: (
+      <p className="bg-black-100/40 hover:bg-black-100 absolute bottom-0 left-0 m-8 w-[80%] rounded-2xl p-4 text-4xl backdrop-blur-sm transition-colors duration-300">
+        Transforming ideas into impactful solutions.
+      </p>
+    ),
+    header: (
+      <Image
+        width="600"
+        height="1000"
+        alt="Pangantara"
+        src="/pangantara.svg"
+        className="h-full w-full rounded-2xl object-cover brightness-50 duration-200 hover:scale-105 hover:brightness-100"
+      />
+    ),
   },
   {
     title: "The Digital Revolution",
     description: "Dive into the transformative power of technology.",
-    header: <Skeleton />,
-    icon: <Home className="h-4 w-4 text-neutral-500" />,
+    header: <></>,
   },
   {
     title: "The Art of Design",
     description: "Discover the beauty of thoughtful and functional design.",
-    header: <Skeleton />,
-    icon: <Home className="h-4 w-4 text-neutral-500" />,
+    header: <></>,
   },
   {
     title: "The Power of Communication",
     description:
       "Understand the impact of effective communication in our lives.",
-    header: <Skeleton />,
-    icon: <Home className="h-4 w-4 text-neutral-500" />,
+    header: <></>,
   },
   {
-    title: "The Pursuit of Knowledge",
-    description: "Join the quest for understanding and enlightenment.",
-    header: <Skeleton />,
-    icon: <Home className="h-4 w-4 text-neutral-500" />,
+    title: (
+      <div className="bg-black-100/40 hover:bg-black-100 absolute bottom-0 left-0 m-8 w-[80%] rounded-2xl p-4 text-4xl backdrop-blur-sm transition-colors duration-300">
+        <p className="mb-4 text-lg tracking-[0.3em] uppercase">Current Focus</p>
+        <p>Developing a modern platform for faculty events.</p>
+      </div>
+    ),
+    header: (
+      <Image
+        width="600"
+        height="1000"
+        alt="FilkomEvent"
+        src="/filkomevent.svg"
+        className="h-full w-full rounded-2xl object-cover brightness-50 duration-200 hover:scale-105 hover:brightness-100"
+      />
+    ),
   },
   {
-    title: "The Pursuit of Knowledge",
-    description: "Join the quest for understanding and enlightenment.",
-    header: <Skeleton />,
-    icon: <Home className="h-4 w-4 text-neutral-500" />,
+    title: (
+      <div className="bg-black-100/40 hover:bg-black-100 absolute bottom-0 left-0 flex w-[80%] items-center justify-center rounded-2xl p-4 text-center text-2xl backdrop-blur-sm transition-colors duration-300">
+        <p>Have a project in mind? Let's make it happen.</p>
+      </div>
+    ),
+    header: <BackgroundGradientAnimation className="" />,
   },
 ];

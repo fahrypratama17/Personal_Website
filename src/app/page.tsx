@@ -7,7 +7,12 @@ const page = () => {
   return (
     <main className="bg-black-100 relative flex flex-col items-center justify-center overflow-hidden">
       <div className="w-full">
-        <FloatingNav navItems={[{ name: "Home", link: "/", icon: <Home /> }]} />
+        <FloatingNav
+          navItems={[
+            { name: "Home", link: "/", icon: <Home /> },
+            { name: "Project", link: "/#project", icon: <Home /> },
+          ]}
+        />
         <Hero />
         <Grid />
       </div>

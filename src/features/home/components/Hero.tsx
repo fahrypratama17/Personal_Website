@@ -1,5 +1,5 @@
 import { Spotlight } from "@/shared/components/SpotlightNew";
-import { cn } from "@/lib/utils";
+import { cn } from "@/lib/cn";
 import { TextGenerateEffect } from "@/shared/components/TextGenerateEffect";
 import MagicButton from "@/shared/components/MagicButton";
 import { MoveUpRight } from "lucide-react";

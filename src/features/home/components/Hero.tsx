@@ -9,11 +9,11 @@ const Hero = () => {
     <div className="h-full min-h-screen">
       <div>
         <Spotlight
-          width={1000}
-          height={2000}
+          width={800}
+          height={1200}
           gradientFirst="radial-gradient(68.54% 68.72% at 55.02% 31.46%, rgba(96,165,250,.14) 0%, rgba(59,130,246,.08) 40%, transparent 100%)"
           gradientSecond="radial-gradient(50% 50% at 50% 50%, rgba(147,197,253,.12) 0%, rgba(59,130,246,.05) 70%, transparent 100%)"
-          gradientThird="radial-gradient(50% 50% at 50% 50%, rgba(191,219,254,.08) 0%, rgba(96,165,250,.03) 70%, transparent 100%)"
+          gradientThird="radial-gradient(50% 50% at 50% 50%, rgba(168,85,247,.18) 0%, rgba(147,51,234,.06) 70%, transparent 100%)"
         />
         <div className="relative flex h-full min-h-screen w-full flex-col items-center justify-center gap-4 bg-transparent">
           <div

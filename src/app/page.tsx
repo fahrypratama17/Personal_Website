@@ -1,5 +1,6 @@
-import Hero from "@/features/home/components/Hero";
 import { FloatingNav } from "@/shared/components/FloatingNavbar";
+import Hero from "@/features/home/components/Hero";
+import Grid from "@/features/home/components/Grid";
 import { Home } from "lucide-react";
 
 const page = () => {
@@ -8,6 +9,7 @@ const page = () => {
       <div className="w-full">
         <FloatingNav navItems={[{ name: "Home", link: "/", icon: <Home /> }]} />
         <Hero />
+        <Grid />
       </div>
     </main>
   );

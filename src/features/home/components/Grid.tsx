@@ -2,6 +2,9 @@ import { BentoGrid, BentoGridItem } from "@/shared/components/BentoGrid";
 import { cn } from "@/lib/cn";
 import Image from "next/image";
 import { BackgroundGradientAnimation } from "@/shared/components/BackgroundGradient";
+import MagicButton from "@/shared/components/MagicButton";
+import { Copy } from "lucide-react";
+import { GridGlobe } from "@/shared/components/GridGlobe";
 
 export default function Grid() {
   return (
@@ -50,9 +53,9 @@ const items = [
     ),
   },
   {
-    title: "The Digital Revolution",
+    title: "The Digital Revolutison",
     description: "Dive into the transformative power of technology.",
-    header: <></>,
+    header: <GridGlobe />,
   },
   {
     title: "The Art of Design",
@@ -84,10 +87,16 @@ const items = [
   },
   {
     title: (
-      <div className="bg-black-100/40 hover:bg-black-100 absolute bottom-0 left-0 flex w-[80%] items-center justify-center rounded-2xl p-4 text-center text-2xl backdrop-blur-sm transition-colors duration-300">
+      <div className="absolute bottom-8 left-12 flex w-[80%] flex-col items-center justify-center gap-4 rounded-2xl p-4 text-center text-2xl backdrop-blur-sm transition-colors duration-300">
         <p>Have a project in mind? Let's make it happen.</p>
+        <MagicButton
+          title="Copy my email address"
+          icon={<Copy className="h-4 w-4" />}
+          position="left"
+          className="gap-2"
+        />
       </div>
     ),
-    header: <BackgroundGradientAnimation className="" />,
+    header: <BackgroundGradientAnimation />,
   },
 ];

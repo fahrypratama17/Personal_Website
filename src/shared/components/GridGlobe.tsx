@@ -412,7 +412,7 @@ export function GridGlobe() {
           className="div"
         >
           <h2 className="text-center text-xl font-bold text-white md:text-4xl">
-            I'm very flexible with time zone communications
+            Easy to work with across different time zones.
           </h2>
         </motion.div>
         <div className="pointer-events-none absolute inset-x-0 bottom-0 z-40 h-40 w-full bg-gradient-to-b from-transparent to-white select-none dark:to-black" />

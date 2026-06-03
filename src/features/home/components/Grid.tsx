@@ -14,7 +14,6 @@ export default function Grid() {
           <BentoGridItem
             key={i}
             title={item.title}
-            description={item.description}
             header={item.header}
             className={cn(i === 0 ? "md:row-span-2" : "", "font-body")}
           />
@@ -25,7 +24,6 @@ export default function Grid() {
           <BentoGridItem
             key={i}
             title={item.title}
-            description={item.description}
             header={item.header}
             className={cn(i === 1 ? "md:row-span-2" : "", "font-body")}
           />
@@ -53,20 +51,48 @@ const items = [
     ),
   },
   {
-    title: "The Digital Revolutison",
-    description: "Dive into the transformative power of technology.",
     header: <GridGlobe />,
   },
   {
-    title: "The Art of Design",
-    description: "Discover the beauty of thoughtful and functional design.",
-    header: <></>,
+    title: (
+      <div className="flex flex-col justify-center gap-4 rounded-2xl p-4">
+        <div>
+          <p className="text-sm tracking-[0.3em] uppercase">Always evolving</p>
+          <p className="text-2xl">and refining my craft.</p>
+        </div>
+
+        <div className="flex w-full flex-col gap-4 text-center text-lg">
+          <div className="flex gap-4">
+            {["Java", "JavaScript", "TypeScript", "Python"].map((item) => (
+              <p
+                key={item}
+                className="w-full rounded-2xl border border-violet-500/20 bg-violet-500/5 py-2"
+              >
+                {item}
+              </p>
+            ))}
+          </div>
+
+          <div className="flex gap-4">
+            {["React", "Next.js", "Three.js", "Motion"].map((item) => (
+              <p
+                key={item}
+                className="w-full rounded-2xl border border-violet-500/20 bg-violet-500/5 py-2"
+              >
+                {item}
+              </p>
+            ))}
+          </div>
+        </div>
+      </div>
+    ),
   },
   {
-    title: "The Power of Communication",
-    description:
-      "Understand the impact of effective communication in our lives.",
-    header: <></>,
+    title: (
+      <div className="mx-auto flex w-[80%] p-4 text-center text-2xl">
+        <p>Developer at heart with a passion for technology.</p>
+      </div>
+    ),
   },
   {
     title: (

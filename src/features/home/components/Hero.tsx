@@ -25,19 +25,19 @@ const Hero = () => {
           />
           <div className="bg-black-100 pointer-events-none absolute inset-0 flex items-center justify-center mask-[radial-gradient(ellipse_at_center,transparent_5%,black)]"></div>
           <h2 className="font-heading w-[80%] text-center text-sm tracking-widest text-white/60 uppercase">
-            Dynamic Web Magic With Next.js
+            Building Modern Web Application
           </h2>
           <TextGenerateEffect
             className="font-heading w-[60%] text-center font-bold text-white md:text-6xl"
-            words="Transforming Concepts into Seamless User Experiences"
+            words="Crafting Digital Products From Concept to Code"
           />
           <p className="font-heading mb-6 w-full text-center text-3xl text-white">
             Hi, I&apos;m Fahry, a Full{" "}
-            <span className="text-white/80">Stack Developer</span> based on
+            <span className="text-white/80">Stack Developer</span> based in
             Indonesia
           </p>
           <MagicButton
-            title="Show my work"
+            title="Explore My Work"
             position="right"
             icon={<MoveUpRight className="h-4 w-4" />}
             className="gap-2"

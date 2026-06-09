@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Fahry Pratama — Personal Website
 
-## Getting Started
+[![Next.js](https://img.shields.io/badge/Next.js-13-black?style=flat&logo=next.js)](https://nextjs.org) [![TypeScript](https://img.shields.io/badge/TypeScript-4.0-blue?style=flat&logo=typescript)](https://www.typescriptlang.org) [![Deploy on Vercel](https://img.shields.io/badge/Deploy%20on-Vercel-000000?style=flat&logo=vercel)](https://vercel.com)
 
-First, run the development server:
+A personal portfolio website for Fahry Pratama built with Next.js and TypeScript. The site showcases projects, experience, and contact information with a responsive, modern design.
+
+Demo
+
+- Live demo: https://your-live-demo-url.com (replace with your actual live site URL)
+
+Screenshot
+
+![Screenshot](./public/screenshot.png)
+
+If you want me to add the screenshot file to the repository, provide the image or confirm and I will upload it to `public/screenshot.png`.
+
+Features
+
+- Home / Landing page
+- Projects / Portfolio section
+- About page
+- Contact form or contact details
+- Responsive layout for mobile and desktop
+
+Technologies
+
+- Framework: Next.js (React)
+- Language: TypeScript
+- Styling: CSS
+- Build & deployment: Vercel recommended
+
+Getting Started (Local Development)
+
+Requirements
+- Node.js (LTS recommended)
+
+Install and run locally:
 
 ```bash
+git clone https://github.com/fahrypratama17/Personal_Website.git
+cd Personal_Website
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open http://localhost:3000 in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Build for production:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm run start
+```
 
-## Learn More
+Project Structure (typical)
 
-To learn more about Next.js, take a look at the following resources:
+- app/ or src/ — application source (pages, components)
+- public/ — static assets (images, favicon)
+- styles/ or src/styles/ — CSS files
+- package.json — scripts and dependencies
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Contact
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Email: your.email@example.com (replace with your real email)
+- GitHub: https://github.com/fahrypratama17
+- Twitter / LinkedIn / other: add links here if desired
 
-## Deploy on Vercel
+Deploy
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+I recommend deploying to Vercel for seamless Next.js support. Connect the repository to Vercel and enable automatic deploys from the default branch.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Notes & Customization
+
+- Replace the demo URL and email with actual values.
+- Add a screenshot to `public/screenshot.png` or tell me the image and I will upload it for you.
+- If you want badges for GitHub Actions, Netlify, or other services, tell me which services to link and I will add them.
+
+If you want, I can now upload a screenshot image to `public/screenshot.png` and replace the placeholder demo URL and email with the real values you provide.

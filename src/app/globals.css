@@ -5,8 +5,8 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --font-heading: "--font-exo-2", sans-serif;
-  --font-body: "--font-source-sans", sans-serif;
+  --font-heading: var(--font-exo-2);
+  --font-body: var(--font-source-sans);
   --color-black-100: #000319;
 
   --font-sans: var(--font-sans);

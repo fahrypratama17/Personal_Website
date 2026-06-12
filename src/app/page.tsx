@@ -3,6 +3,7 @@ import Hero from "@/features/home/components/Hero";
 import Grid from "@/features/home/components/Grid";
 import { Home } from "lucide-react";
 import RecentProject from "@/features/home/components/RecentProject";
+import Experience from "@/features/home/components/Experience";
 
 const page = () => {
   return (
@@ -18,6 +19,7 @@ const page = () => {
         <Hero />
         <Grid />
         <RecentProject />
+        <Experience />
       </div>
     </main>
   );

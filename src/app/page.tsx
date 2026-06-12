@@ -5,6 +5,7 @@ import { Home } from "lucide-react";
 import RecentProject from "@/features/home/components/RecentProject";
 import Experience from "@/features/home/components/Experience";
 import Journey from "@/features/home/components/Journey";
+import Footer from "@/features/home/components/Footer";
 
 const page = () => {
   return (
@@ -22,6 +23,7 @@ const page = () => {
         <RecentProject />
         <Experience />
         <Journey />
+        <Footer />
       </div>
     </main>
   );

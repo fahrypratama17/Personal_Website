@@ -1,4 +1,4 @@
-import { projects, workExperience } from "@/features/home/data/data";
+import { workExperience } from "@/features/home/data/data";
 import { Button } from "@/shared/components/MovingBorder";
 
 const Experience = () => {

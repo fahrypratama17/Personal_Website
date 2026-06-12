@@ -4,6 +4,7 @@ import Grid from "@/features/home/components/Grid";
 import { Home } from "lucide-react";
 import RecentProject from "@/features/home/components/RecentProject";
 import Experience from "@/features/home/components/Experience";
+import Journey from "@/features/home/components/Journey";
 
 const page = () => {
   return (
@@ -20,6 +21,7 @@ const page = () => {
         <Grid />
         <RecentProject />
         <Experience />
+        <Journey />
       </div>
     </main>
   );

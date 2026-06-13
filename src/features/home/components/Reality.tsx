@@ -7,7 +7,7 @@ const Reality = () => {
       <h1 className="font-heading heading text-6xl text-white">
         How I Turn Ideas <span className="text-violet-300">into Reality</span>
       </h1>
-      <div className="mx-auto mt-20 grid w-[85%] grid-cols-3 items-center justify-center gap-x-20 gap-y-12 py-12">
+      <div className="mx-auto mt-8 grid w-[90%] grid-cols-1 items-center justify-center gap-x-20 gap-y-12 py-12 md:mt-20 md:w-[85%] md:grid-cols-3">
         <CardReveal
           title="Research & Strategy"
           icon={<AceternityIcon order="Phase 1" />}

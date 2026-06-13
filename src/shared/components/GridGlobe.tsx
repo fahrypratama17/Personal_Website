@@ -395,8 +395,8 @@ export function GridGlobe() {
   ];
 
   return (
-    <div className="relative flex h-screen w-full flex-row items-center justify-center py-8 md:h-auto dark:bg-black">
-      <div className="relative mx-auto h-full w-full max-w-7xl overflow-hidden px-4 md:h-[40rem]">
+    <div className="relative flex h-80 w-full flex-row items-center justify-center py-8 md:h-auto dark:bg-black">
+      <div className="relative mx-auto h-[16rem] w-full max-w-7xl md:h-[40rem] md:overflow-hidden">
         <motion.div
           initial={{
             opacity: 0,
@@ -409,14 +409,14 @@ export function GridGlobe() {
           transition={{
             duration: 1,
           }}
-          className="div"
+          className="px-4"
         >
           <h2 className="text-center text-xl font-bold text-white md:text-4xl">
             Easy to work with across different time zones.
           </h2>
         </motion.div>
-        <div className="pointer-events-none absolute inset-x-0 bottom-0 z-40 h-40 w-full bg-gradient-to-b from-transparent to-white select-none dark:to-black" />
-        <div className="absolute -bottom-4 z-10 h-20 w-full md:h-full">
+        <div className="pointer-events-none absolute inset-x-0 bottom-0 z-40 h-20 w-full select-none md:h-40 md:bg-linear-to-b md:from-transparent md:to-white dark:to-black" />
+        <div className="absolute z-10 h-full w-full md:-bottom-4">
           <World data={sampleArcs} globeConfig={globeConfig} />
         </div>
       </div>

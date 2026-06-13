@@ -55,14 +55,14 @@ export const projects = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "HMDTIF - Front End",
+    desc: "Collaborated on developing and maintaining the official website of the Informatics Engineering Student Association, Universitas Brawijaya.",
     thumbnail: "/hmdtif.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "Intrivia - Front End",
+    desc: "Collaborated on building and maintaining the official onboarding website for incoming Informatics Engineering students at Universitas Brawijaya.",
     thumbnail: "/intrivia.svg",
   },
 ];

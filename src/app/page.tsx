@@ -2,9 +2,9 @@ import { FloatingNav } from "@/shared/components/FloatingNavbar";
 import Hero from "@/features/home/components/Hero";
 import Grid from "@/features/home/components/Grid";
 import { Home } from "lucide-react";
-import RecentProject from "@/features/home/components/RecentProject";
-import Experience from "@/features/home/components/Experience";
+import Project from "@/features/home/components/Project";
 import Journey from "@/features/home/components/Journey";
+import Reality from "@/features/home/components/Reality";
 import Footer from "@/features/home/components/Footer";
 
 const page = () => {
@@ -20,9 +20,9 @@ const page = () => {
         />
         <Hero />
         <Grid />
-        <RecentProject />
-        <Experience />
+        <Project />
         <Journey />
+        <Reality />
         <Footer />
       </div>
     </main>

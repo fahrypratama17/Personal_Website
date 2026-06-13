@@ -4,10 +4,14 @@ import "./globals.css";
 
 const exo = Exo_2({
   variable: "--font-exo-2",
+  weight: ["400", "700"],
+  display: "swap",
 });
 
 const sourceSans = Source_Sans_3({
   variable: "--font-source-sans",
+  weight: ["400", "700"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {

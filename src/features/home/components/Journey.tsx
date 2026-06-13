@@ -1,55 +1,26 @@
-import { AceternityIcon, CardReveal } from "@/shared/components/CardReveal";
-import { CanvasRevealEffect } from "@/shared/components/CanvasReveal";
+import { workExperience } from "@/features/home/data/data";
+import { Button } from "@/shared/components/MovingBorder";
 
 const Journey = () => {
   return (
     <section className="section">
       <h1 className="font-heading heading text-6xl text-white">
-        How I Turn Ideas <span className="text-violet-300">into Reality</span>
+        My Career <span className="text-violet-300">Journey</span>
       </h1>
-      <div className="mx-auto mt-20 grid w-[85%] grid-cols-3 items-center justify-center gap-x-20 gap-y-12 py-12">
-        <CardReveal
-          title="Planning & Strategy"
-          icon={<AceternityIcon order="Phase 1" />}
-          desc="We'll collaborate to map out your website's goals, target audience,
-          and key functionalities. We'll discuss things like site structure,
-          navigation, and content requirements."
-        >
-          <CanvasRevealEffect
-            animationSpeed={5.1}
-            containerClassName="bg-emerald-900 rounded-3xl overflow-hidden"
-          />
-        </CardReveal>
-        <CardReveal
-          title="Development & Progress Update"
-          icon={<AceternityIcon order="Phase 2" />}
-          desc="Once we agree on the plan, I cue my lofi playlist and dive into
-          coding. From initial sketches to polished code, I keep you updated
-          every step of the way."
-        >
-          <CanvasRevealEffect
-            animationSpeed={3}
-            containerClassName="bg-pink-900 rounded-3xl overflow-hidden"
-            colors={[
-              [255, 166, 158],
-              [221, 255, 247],
-            ]}
-            dotSize={2}
-          />
-        </CardReveal>
-        <CardReveal
-          title="Development & Launch"
-          icon={<AceternityIcon order="Phase 3" />}
-          desc="This is where the magic happens! Based on the approved descign,
-          I'll translate everything into functional code, building your website
-          from the ground up."
-        >
-          <CanvasRevealEffect
-            animationSpeed={3}
-            containerClassName="bg-sky-600 rounded-3xl overflow-hidden"
-            colors={[[125, 211, 252]]}
-          />
-        </CardReveal>
+      <div className="mx-auto mt-20 grid w-[85%] grid-cols-2 items-center justify-center gap-x-20 gap-y-12 py-12">
+        {workExperience.map(({ id, title, desc, thumbnail }) => (
+          <Button
+            className="font-body grid w-full grid-cols-[0.3fr_1fr] gap-4 p-4"
+            key={id}
+          >
+            <img src={thumbnail} alt={title} className="h-30 w-30" />
+            <div className="flex flex-col gap-4 text-start">
+              <h3 className="font-heading text-3xl font-bold">{title}</h3>
+
+              <p className="font-heading">{desc}</p>
+            </div>
+          </Button>
+        ))}
       </div>
     </section>
   );

@@ -7,7 +7,7 @@ import {
 } from "@/shared/components/Card";
 import { ArrowUpRight } from "lucide-react";
 
-const RecentProject = () => {
+const Project = () => {
   return (
     <section className="section">
       <h1 className="font-heading heading text-6xl text-white">
@@ -62,4 +62,4 @@ const RecentProject = () => {
   );
 };
 
-export default RecentProject;
+export default Project;

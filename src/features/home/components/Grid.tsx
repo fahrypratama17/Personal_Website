@@ -8,7 +8,7 @@ import { GridGlobe } from "@/shared/components/GridGlobe";
 
 export default function Grid() {
   return (
-    <section id="project" className="section">
+    <section className="section">
       <BentoGrid className="mx-auto mb-4 w-[85%] md:grid-cols-[1fr_0.7fr]">
         {items.slice(0, 3).map((item, i) => (
           <BentoGridItem

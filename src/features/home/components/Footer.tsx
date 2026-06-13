@@ -4,7 +4,10 @@ import { socialMedia } from "@/features/home/data/data";
 
 const Footer = () => {
   return (
-    <footer className="w-full pt-40 pb-10" id="contact">
+    <footer
+      className="relative flex min-h-screen w-full flex-col justify-between pt-40 pb-30"
+      id="contact"
+    >
       <div className="absolute -bottom-72 left-0 min-h-96 w-full">
         <img
           src="/footer-grid.svg"
@@ -13,7 +16,7 @@ const Footer = () => {
         />
       </div>
 
-      <div className="mx-auto flex w-[85%] flex-col items-center">
+      <div className="mx-auto flex w-[85%] flex-col items-center gap-4">
         <h1 className="heading font-heading text-white lg:max-w-[45vw]">
           Ready to take <span className="text-violet-300">your</span> digital
           presence to the next level?
@@ -31,7 +34,7 @@ const Footer = () => {
           />
         </a>
       </div>
-      <div className="font-body mx-auto mt-16 flex w-[80%] flex-col items-center justify-between md:flex-row">
+      <div className="font-body mx-auto flex w-[80%] flex-col items-center justify-between md:flex-row">
         <p className="text-sm font-light text-white md:text-base md:font-normal">
           Copyright &copy; {new Date().getFullYear()} Muhamad Fahry Pratama
           Putra

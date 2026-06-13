@@ -9,7 +9,7 @@ import { ArrowUpRight } from "lucide-react";
 
 const Project = () => {
   return (
-    <section className="section">
+    <section className="section" id="project">
       <h1 className="font-heading heading text-6xl text-white">
         Featured <span className="text-violet-300">Projects</span>
       </h1>

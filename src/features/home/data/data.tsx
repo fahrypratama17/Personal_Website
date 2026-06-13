@@ -1,3 +1,12 @@
+import { Folder, Home, Phone, Route } from "lucide-react";
+
+export const navItems = [
+  { name: "Home", link: "/", icon: <Home /> },
+  { name: "Project", link: "/#project", icon: <Folder /> },
+  { name: "Journey", link: "/#journey", icon: <Route /> },
+  { name: "Contact", link: "/#contact", icon: <Phone /> },
+];
+
 export const projects = [
   {
     id: 1,

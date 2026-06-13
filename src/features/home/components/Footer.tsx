@@ -17,13 +17,13 @@ const Footer = () => {
       </div>
 
       <div className="mx-auto flex w-[85%] flex-col items-center gap-4">
-        <h1 className="heading font-heading text-white lg:max-w-[45vw]">
-          Ready to take <span className="text-violet-300">your</span> digital
-          presence to the next level?
+        <h1 className="heading font-heading leading-tight text-white lg:max-w-[45vw]">
+          Have an <span className="text-violet-300">idea</span> worth turning
+          into reality together?
         </h1>
         <p className="font-heading my-5 text-center text-white md:mt-10">
-          Reach out to me today and let&apos;s discuss how I can help you
-          achieve your goals.
+          Reach out today and let&apos;s talk about how we can bring your ideas
+          to life.
         </p>
         <a href="mailto:contact@m.fahry.pratama.putra@gmail.com">
           <MagicButton
@@ -42,12 +42,14 @@ const Footer = () => {
 
         <div className="flex items-center gap-6 md:gap-3">
           {socialMedia.map((info) => (
-            <div
+            <a
               key={info.id}
+              href={info.link}
+              target="_blank"
               className="bg-opacity-75 bg-black-200 border-black-300 flex h-10 w-10 cursor-pointer items-center justify-center rounded-lg border saturate-180 backdrop-blur-lg backdrop-filter"
             >
               <img src={info.img} alt="icons" width={20} height={20} />
-            </div>
+            </a>
           ))}
         </div>
       </div>

@@ -5,10 +5,10 @@ import { socialMedia } from "@/features/home/data/data";
 const Footer = () => {
   return (
     <footer
-      className="relative flex min-h-screen w-full flex-col justify-between pt-40 pb-30"
+      className="relative flex h-[80vh] w-full flex-col justify-between pt-20 pb-30 md:min-h-screen md:pt-40"
       id="contact"
     >
-      <div className="absolute -bottom-18 left-0 min-h-96 w-full">
+      <div className="absolute left-0 min-h-96 w-full md:-bottom-18">
         <img
           src="/footer-grid.svg"
           alt="grid"
@@ -17,11 +17,11 @@ const Footer = () => {
       </div>
 
       <div className="mx-auto flex w-[85%] flex-col items-center gap-4">
-        <h1 className="heading font-heading leading-tight text-white lg:max-w-[45vw]">
+        <h1 className="font-heading text-center text-2xl leading-tight font-bold text-white md:text-5xl lg:max-w-[45vw]">
           Have an <span className="text-violet-300">idea</span> worth turning
           into reality together?
         </h1>
-        <p className="font-heading my-5 text-center text-white md:mt-10">
+        <p className="font-heading my-5 text-center text-sm text-white md:mt-10 md:text-lg">
           Reach out today and let&apos;s talk about how we can bring your ideas
           to life.
         </p>
@@ -40,7 +40,7 @@ const Footer = () => {
           Putra
         </p>
 
-        <div className="flex items-center gap-6 md:gap-3">
+        <div className="mt-12 flex items-center gap-6 md:mt-0 md:gap-3">
           {socialMedia.map((info) => (
             <a
               key={info.id}

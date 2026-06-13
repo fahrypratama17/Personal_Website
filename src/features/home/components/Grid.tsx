@@ -89,10 +89,14 @@ const items = [
   },
   {
     title: (
-      <div className="mx-auto flex w-[80%] p-4 text-center text-2xl">
+      <div className="absolute bottom-8 left-12 mx-auto flex w-[80%] flex-col items-center justify-center gap-4 overflow-hidden p-4 text-center text-2xl">
         <p>Developer at heart with a passion for technology.</p>
+        <p className="text-lg">
+          Bridging the gap between clean code and intuitive design.
+        </p>
       </div>
     ),
+    header: <div></div>,
   },
   {
     title: (

@@ -3,7 +3,7 @@ import { Button } from "@/shared/components/MovingBorder";
 
 const Journey = () => {
   return (
-    <section className="section">
+    <section className="section" id="journey">
       <h1 className="font-heading heading text-6xl text-white">
         My Career <span className="text-violet-300">Journey</span>
       </h1>

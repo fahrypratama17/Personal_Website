@@ -9,7 +9,7 @@ import { ArrowUpRight } from "lucide-react";
 
 const Project = () => {
   return (
-    <section className="section">
+    <section className="section" id="project">
       <h1 className="font-heading heading text-6xl text-white">
         Featured <span className="text-violet-300">Projects</span>
       </h1>
@@ -50,7 +50,7 @@ const Project = () => {
               <a
                 href={link}
                 target="_blank"
-                className="flex items-center gap-2 text-2xl font-bold text-violet-300"
+                className="flex items-center gap-2 text-2xl font-bold text-violet-300 transition-colors duration-200 hover:text-violet-600"
               >
                 Check Live Site <ArrowUpRight className="h-8 w-8" />
               </a>

@@ -1,3 +1,12 @@
+import { Folder, Home, Phone, Route } from "lucide-react";
+
+export const navItems = [
+  { name: "Home", link: "/", icon: <Home /> },
+  { name: "Project", link: "/#project", icon: <Folder /> },
+  { name: "Journey", link: "/#journey", icon: <Route /> },
+  { name: "Contact", link: "/#contact", icon: <Phone /> },
+];
+
 export const projects = [
   {
     id: 1,
@@ -70,14 +79,17 @@ export const workExperience = [
 export const socialMedia = [
   {
     id: 1,
-    img: "/git.svg",
+    img: "/github.svg",
+    link: "https://github.com/fahrypratama17",
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/instagram.svg",
+    link: "https://instagram.com/fahrypp",
   },
   {
     id: 3,
-    img: "/link.svg",
+    img: "/linkedin.svg",
+    link: "https://www.linkedin.com/in/muhamad-fahry-pratama-putra-05a2a8322/",
   },
 ];

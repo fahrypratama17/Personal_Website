@@ -15,7 +15,7 @@ const Hero = () => {
           gradientSecond="radial-gradient(50% 50% at 50% 50%, rgba(147,197,253,.12) 0%, rgba(59,130,246,.05) 70%, transparent 100%)"
           gradientThird="radial-gradient(50% 50% at 50% 50%, rgba(168,85,247,.18) 0%, rgba(147,51,234,.06) 70%, transparent 100%)"
         />
-        <div className="relative flex h-full min-h-screen w-full flex-col items-center justify-center gap-4 bg-transparent">
+        <div className="relative flex h-full min-h-screen w-full flex-col items-center justify-center gap-2 bg-transparent md:gap-4">
           <div
             className={cn(
               "absolute inset-0 opacity-5",
@@ -28,10 +28,10 @@ const Hero = () => {
             Building Modern Web Application
           </h2>
           <TextGenerateEffect
-            className="font-heading w-[60%] text-center font-bold text-white md:text-6xl"
+            className="font-heading w-[80%] text-center text-2xl font-bold text-white md:w-[60%] md:text-6xl"
             words="Crafting Digital Products From Concept to Code"
           />
-          <p className="font-heading mb-6 w-full text-center text-3xl text-white">
+          <p className="font-heading mb-6 w-[90%] text-center text-xl text-white md:w-full md:text-3xl">
             Hi, I&apos;m Fahry, a Full{" "}
             <span className="text-white/80">Stack Developer</span> based in
             Indonesia

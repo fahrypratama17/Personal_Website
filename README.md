@@ -6,7 +6,7 @@ A personal portfolio website for Fahry Pratama built with Next.js and TypeScript
 
 Demo
 
-- Live demo: https://your-live-demo-url.com (replace with your actual live site URL)
+- Live demo: personal-website-fahry.vercel.app
 
 Screenshot
 

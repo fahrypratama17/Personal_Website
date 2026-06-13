@@ -9,11 +9,9 @@ const Reality = () => {
       </h1>
       <div className="mx-auto mt-20 grid w-[85%] grid-cols-3 items-center justify-center gap-x-20 gap-y-12 py-12">
         <CardReveal
-          title="Planning & Strategy"
+          title="Research & Strategy"
           icon={<AceternityIcon order="Phase 1" />}
-          desc="We'll collaborate to map out your website's goals, target audience,
-          and key functionalities. We'll discuss things like site structure,
-          navigation, and content requirements."
+          desc="I begin by understanding the project's goals, target users, and technical requirements. This phase lays the foundation for building meaningful and effective digital solutions."
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -21,11 +19,9 @@ const Reality = () => {
           />
         </CardReveal>
         <CardReveal
-          title="Development & Progress Update"
+          title="Build & Iterate"
           icon={<AceternityIcon order="Phase 2" />}
-          desc="Once we agree on the plan, I cue my lofi playlist and dive into
-          coding. From initial sketches to polished code, I keep you updated
-          every step of the way."
+          desc="Turning concepts into reality, I develop features incrementally while continuously refining the user experience, code quality, and overall system architecture."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -38,11 +34,9 @@ const Reality = () => {
           />
         </CardReveal>
         <CardReveal
-          title="Development & Launch"
+          title="Launch & Improve"
           icon={<AceternityIcon order="Phase 3" />}
-          desc="This is where the magic happens! Based on the approved descign,
-          I'll translate everything into functional code, building your website
-          from the ground up."
+          desc="After rigorous testing and optimization, I deploy the application and monitor its performance, making improvements to ensure long-term scalability and success."
         >
           <CanvasRevealEffect
             animationSpeed={3}

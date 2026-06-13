@@ -8,7 +8,7 @@ const Footer = () => {
       className="relative flex min-h-screen w-full flex-col justify-between pt-40 pb-30"
       id="contact"
     >
-      <div className="absolute -bottom-72 left-0 min-h-96 w-full">
+      <div className="absolute -bottom-18 left-0 min-h-96 w-full">
         <img
           src="/footer-grid.svg"
           alt="grid"

@@ -19,6 +19,7 @@ export const CardReveal = ({
     <div
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
+      onClick={() => setHovered((prev) => !prev)}
       className="group/canvas-card relative mx-auto flex w-full max-w-sm items-center justify-center rounded-3xl border border-white/[0.2] p-4 lg:h-[35rem] dark:border-white/[0.2]"
       style={{
         background: "rgb(4,7,29)",

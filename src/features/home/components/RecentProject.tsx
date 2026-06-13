@@ -48,7 +48,7 @@ const RecentProject = () => {
                 ))}
               </div>
               <a
-                href=""
+                href={link}
                 target="_blank"
                 className="flex items-center gap-2 text-2xl font-bold text-violet-300"
               >

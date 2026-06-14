@@ -74,6 +74,12 @@ export const workExperience = [
     desc: "Collaborated on building and maintaining the official onboarding website for incoming Informatics Engineering students at Universitas Brawijaya.",
     thumbnail: "/intrivia.svg",
   },
+  {
+    id: 3,
+    title: "BCC - Front End",
+    desc: "Collaborated on developing various projects within BCC while also serving as a Talent Development member, supporting skill growth and learning initiatives for fellow members.",
+    thumbnail: "/bcc.svg",
+  },
 ];
 
 export const socialMedia = [

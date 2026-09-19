@@ -1,5 +1,7 @@
 import { Folder, Home, Phone, Route } from "lucide-react";
 
+export const EMAIL = "m.fahry.pratama.putra@gmail.com";
+
 export const navItems = [
   { name: "Home", link: "/", icon: <Home /> },
   { name: "Project", link: "/#project", icon: <Folder /> },

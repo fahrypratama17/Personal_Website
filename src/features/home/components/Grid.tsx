@@ -6,12 +6,13 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 import { Check, Copy, MapPin } from "lucide-react";
 import { cn } from "@/lib/cn";
+import { copyText } from "@/lib/clipboard";
+import { EMAIL } from "@/features/home/data/data";
 import MagicButton from "@/shared/components/MagicButton";
 import { GridGlobe } from "@/shared/components/GridGlobe";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
-const EMAIL = "m.fahry.pratama.putra@gmail.com";
 const HEADING = "Turning Ideas Into Thoughtful Digital Experiences".split(" ");
 const ACCENT_FROM = 3;
 const BURST_COUNT = 12;
@@ -84,20 +85,6 @@ const LocalTime = () => {
     () => "--:--",
   );
   return <>{time} WIB</>;
-};
-
-const copyText = async (text: string) => {
-  if (navigator.clipboard && window.isSecureContext) {
-    return navigator.clipboard.writeText(text);
-  }
-  const ta = document.createElement("textarea");
-  ta.value = text;
-  ta.style.position = "fixed";
-  ta.style.opacity = "0";
-  document.body.appendChild(ta);
-  ta.select();
-  document.execCommand("copy");
-  ta.remove();
 };
 
 const TechPill = ({ tech, hidden }: { tech: Tech; hidden?: boolean }) => (

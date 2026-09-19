@@ -1,5 +1,5 @@
 "use client";
-import { useRef, useState, useSyncExternalStore } from "react";
+import { Fragment, useRef, useState, useSyncExternalStore } from "react";
 import Image from "next/image";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -508,24 +508,23 @@ export default function Grid() {
         </div>
         <h2 className="font-heading text-3xl leading-tight font-bold tracking-wide text-white md:text-5xl">
           {HEADING.map((word, idx) => (
-            <span
-              key={word + idx}
-              className="inline-block overflow-hidden pb-2 align-bottom"
-            >
-              <span data-grid="word" className="inline-block">
-                {idx >= ACCENT_FROM ? (
-                  <span
-                    data-grid="accent"
-                    className="bg-linear-to-r from-violet-300 via-sky-300 to-violet-300 bg-size-[200%_auto] bg-clip-text text-transparent"
-                  >
-                    {word}
-                  </span>
-                ) : (
-                  word
-                )}
+            <Fragment key={word + idx}>
+              <span className="inline-block overflow-hidden pb-2 align-bottom">
+                <span data-grid="word" className="inline-block">
+                  {idx >= ACCENT_FROM ? (
+                    <span
+                      data-grid="accent"
+                      className="bg-linear-to-r from-violet-300 via-sky-300 to-violet-300 bg-size-[200%_auto] bg-clip-text text-transparent"
+                    >
+                      {word}
+                    </span>
+                  ) : (
+                    word
+                  )}
+                </span>
               </span>
               {idx < HEADING.length - 1 && " "}
-            </span>
+            </Fragment>
           ))}
         </h2>
         <p

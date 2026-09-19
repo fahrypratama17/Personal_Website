@@ -37,7 +37,6 @@ const Hero = () => {
           };
           if (!motion) return;
 
-          // Intro sequence
           let inView = true;
           const intro = gsap.timeline({
             defaults: { ease: "expo.out" },
@@ -89,7 +88,6 @@ const Hero = () => {
               "-=0.5",
             );
 
-          // Ambient loops (paused while the hero is off-screen)
           const ambient = gsap.timeline({
             repeat: -1,
             yoyo: true,
@@ -133,7 +131,6 @@ const Hero = () => {
             },
           });
 
-          // Scroll-out: content lifts and fades, background drifts slower
           gsap.to("[data-hero=content]", {
             y: -120,
             scale: 0.95,
@@ -159,7 +156,6 @@ const Hero = () => {
 
           if (!finePointer) return;
 
-          // Pointer parallax on background layers
           const layers = gsap.utils
             .toArray<HTMLElement>("[data-depth]")
             .map((layer) => ({
@@ -177,7 +173,6 @@ const Hero = () => {
             });
           };
 
-          // Magnetic CTA
           const cta = el.querySelector<HTMLElement>("[data-hero=magnet]");
           const ctaX =
             cta && gsap.quickTo(cta, "x", { duration: 0.5, ease: "power3" });
@@ -239,11 +234,11 @@ const Hero = () => {
         <div data-depth="60" className="absolute inset-0">
           <div
             data-hero="orb"
-            className="absolute top-[30%] left-[35%] size-[36rem] rounded-full bg-[radial-gradient(circle,rgba(139,92,246,.22)_0%,transparent_65%)] will-change-transform md:size-[48rem]"
+            className="absolute top-[30%] left-[35%] size-144 rounded-full bg-[radial-gradient(circle,rgba(139,92,246,.22)_0%,transparent_65%)] will-change-transform md:size-192"
           />
           <div
             data-hero="orb"
-            className="absolute top-[65%] left-[68%] size-[30rem] rounded-full bg-[radial-gradient(circle,rgba(59,130,246,.18)_0%,transparent_65%)] will-change-transform md:size-[40rem]"
+            className="absolute top-[65%] left-[68%] size-120 rounded-full bg-[radial-gradient(circle,rgba(59,130,246,.18)_0%,transparent_65%)] will-change-transform md:size-160"
           />
         </div>
       </div>

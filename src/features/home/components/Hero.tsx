@@ -247,17 +247,6 @@ const Hero = () => {
         data-hero="content"
         className="relative z-10 flex w-full flex-col items-center gap-4 px-4 md:gap-6"
       >
-        <div
-          data-hero="badge"
-          className="font-heading flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs tracking-widest text-white/70 uppercase backdrop-blur-sm md:text-sm"
-        >
-          <span className="relative flex size-2">
-            <span className="absolute inline-flex size-full animate-ping rounded-full bg-violet-400 opacity-60" />
-            <span className="relative inline-flex size-2 rounded-full bg-violet-400" />
-          </span>
-          Building Modern Web Application
-        </div>
-
         <h1 className="font-heading w-full text-center text-4xl leading-tight font-bold tracking-wide text-white md:w-[70%] md:text-7xl">
           {HEADLINE.map((word, idx) => (
             <span

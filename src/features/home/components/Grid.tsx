@@ -454,45 +454,10 @@ export default function Grid() {
 
   return (
     <section ref={root} id="about" className="section relative isolate">
-      <div
-        data-grid="bg"
-        aria-hidden
-        className="pointer-events-none absolute inset-0 -z-10"
-      >
-        <div
-          className={cn(
-            "absolute inset-0 opacity-[0.05]",
-            "bg-size-[100px_100px]",
-            "bg-[linear-gradient(to_right,#e4e4e7_2px,transparent_2px),linear-gradient(to_bottom,#e4e4e7_2px,transparent_2px)]",
-            "mask-[radial-gradient(ellipse_at_center,black_10%,transparent_70%)]",
-          )}
-        />
-        <div className="absolute top-[20%] left-[10%] size-120 rounded-full bg-[radial-gradient(circle,rgba(139,92,246,.14)_0%,transparent_65%)]" />
-        <div className="absolute top-[60%] right-[5%] size-120 rounded-full bg-[radial-gradient(circle,rgba(59,130,246,.12)_0%,transparent_65%)]" />
-      </div>
-
-      <div
-        aria-hidden
-        data-grid="connector"
-        className="relative mx-auto -mt-16 mb-6 h-28 w-px origin-top bg-linear-to-b from-white/0 via-violet-400/60 to-violet-400/10 md:-mt-20"
-      >
-        <span
-          data-grid="connector-dot"
-          className="absolute -top-1 -left-0.75 size-1.75 rounded-full bg-violet-300 shadow-[0_0_12px_2px_rgba(167,139,250,0.8)]"
-        />
-      </div>
-
       <header
         data-grid="header"
         className="mx-auto mb-10 flex w-[90%] flex-col items-center gap-4 text-center md:mb-14 md:w-[70%]"
       >
-        <div
-          data-grid="badge"
-          className="font-heading flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs tracking-widest text-white/70 uppercase backdrop-blur-sm md:text-sm"
-        >
-          <PulseDot />
-          About Me
-        </div>
         <h2 className="font-heading text-3xl leading-tight font-bold tracking-wide text-white md:text-5xl">
           {HEADING.map((word, idx) => (
             <Fragment key={word + idx}>

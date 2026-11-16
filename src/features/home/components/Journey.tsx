@@ -464,16 +464,6 @@ const Journey = () => {
         data-j="header"
         className="mx-auto mb-12 flex w-[90%] flex-col items-center gap-4 text-center md:mb-16 md:w-[70%]"
       >
-        <div
-          data-j="badge"
-          className="font-heading flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs tracking-widest text-white/70 uppercase backdrop-blur-sm md:text-sm"
-        >
-          <span className="relative flex size-2">
-            <span className="absolute inline-flex size-full animate-ping rounded-full bg-violet-400 opacity-60" />
-            <span className="relative inline-flex size-2 rounded-full bg-violet-400" />
-          </span>
-          Experience
-        </div>
         <h2 className="font-heading text-4xl leading-tight font-bold tracking-wide text-white md:text-6xl">
           {HEADING.map((word, idx) => (
             <Fragment key={word}>

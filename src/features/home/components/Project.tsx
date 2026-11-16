@@ -262,18 +262,6 @@ const Project = () => {
   return (
     <section ref={root} id="project" className="section relative isolate">
       <div
-        aria-hidden
-        className="pointer-events-none absolute inset-x-0 top-1/3 -z-10 overflow-hidden"
-      >
-        <p
-          data-proj="ghost"
-          className="font-heading text-[18vw] leading-none font-bold whitespace-nowrap text-transparent [-webkit-text-stroke:1px_rgba(255,255,255,0.06)]"
-        >
-          Selected Work — Selected Work — Selected Work
-        </p>
-      </div>
-
-      <div
         data-proj="pin"
         className="flex flex-col justify-center gap-8 md:h-screen md:gap-10"
       >
@@ -282,16 +270,6 @@ const Project = () => {
           className="mx-auto flex w-[90%] flex-col items-center gap-4 text-center md:w-[85%] md:flex-row md:items-end md:justify-between md:text-left"
         >
           <div className="flex flex-col items-center gap-4 md:items-start">
-            <div
-              data-proj="badge"
-              className="font-heading flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1.5 text-xs tracking-widest text-white/70 uppercase backdrop-blur-sm md:text-sm"
-            >
-              <span className="relative flex size-2">
-                <span className="absolute inline-flex size-full animate-ping rounded-full bg-violet-400 opacity-60" />
-                <span className="relative inline-flex size-2 rounded-full bg-violet-400" />
-              </span>
-              Selected Work
-            </div>
             <h2 className="font-heading text-4xl leading-tight font-bold tracking-wide text-white md:text-6xl">
               {HEADING.map((word, idx) => (
                 <Fragment key={word}>

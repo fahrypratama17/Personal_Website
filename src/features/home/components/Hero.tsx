@@ -300,20 +300,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
-      <div
-        data-hero="scroll"
-        aria-hidden
-        className="absolute bottom-8 left-1/2 flex -translate-x-1/2 flex-col items-center gap-2 text-[10px] tracking-[0.3em] text-white/40 uppercase"
-      >
-        <div className="flex h-9 w-5 justify-center rounded-full border border-white/20 pt-2">
-          <span
-            data-hero="scroll-dot"
-            className="size-1 rounded-full bg-white/70"
-          />
-        </div>
-        Scroll
-      </div>
     </section>
   );
 };
